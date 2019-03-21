@@ -1,10 +1,12 @@
-#Ecommerce django - curso na udemy
+# Ecommerce django - curso na udemy
 
-##Pré-requisitos
+## Pré-requisitos
+
 django 2.0 ou ++
+
 Virtual Env na máquina
 
-##Instalação
+## Instalação
 
 Na pasta do virtual env ative o ambiente virtual
 
@@ -19,7 +21,7 @@ pip install -r requirements.txt
 ./manage.py runserver
 ```
 
-##Demontrativo Heroku
+## Demontrativo Heroku
 
 [DjangoEcommerce](https://djangoecommerceudemy.herokuapp.com)
 
