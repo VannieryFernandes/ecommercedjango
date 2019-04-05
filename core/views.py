@@ -3,16 +3,11 @@ from django.http import HttpResponse
 # Create your views here.
 from catalog.models import Category
 from .forms import ContactForm
+from django.views.generic import TemplateView
 
-def index(request):
-	return render(request, 'index.html')
-
-def product(request):
-	return render(request, 'product.html')
-
-def product_list(request):
-	return render(request, 'product_list.html')
-
+class IndexView(TemplateView):
+    template_name = "index.html"
+index = IndexView.as_view()
 
 def contact(request):
   success = False
@@ -25,3 +20,4 @@ def contact(request):
   }
 
   return render(request,'contact.html',context)
+
