@@ -142,6 +142,12 @@ ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
+
+#auth
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index'
+
+
 try:
     from .local_settings import *
 except ImportError:

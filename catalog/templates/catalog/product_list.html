@@ -20,7 +20,13 @@ Lista de produtos | {{block.super}}
 					<div class="caption">
 						<h3>{{ product }}</h3>
 						<p> {{ product.description|linebreaks}}</p>
-						<p><a href="#" class="btn btn-success" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						 <div class="form-group">
+				      <label for="id_name" class="col-md-3 control-label">capitulos</label>
+				      <div class="col-md-5">
+				        <input type="number" class="form-control" id="id_name" placeholder="capitulo" />
+				      </div>
+				    </div>
+						<p><a href="#" class="btn btn-success" role="button">ok</a>
 					</div>
 				</div>
 			</div>
