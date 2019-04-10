@@ -11,6 +11,7 @@ urlpatterns = [
 	url(r'^contato/$', views.contact, name='contact'),
     url(r'^admin/', admin.site.urls),
     url(r'^entrar/$',auth_views.LoginView.as_view(template_name='login.html') , name='login'),
+    url(r'^registrar/$',views.register , name='register'),
     url(r'^sair/$',auth_views.LogoutView.as_view(next_page='index') , name='logout'),
 
 ]
