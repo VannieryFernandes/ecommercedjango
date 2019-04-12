@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     ##apps
     'core',
     'catalog',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -146,6 +147,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 #auth
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'index'
+AUTH_USER_MODEL = 'accounts.User'
 
 
 try:
